@@ -1,0 +1,91 @@
+.loginScreen {
+  position: relative;
+  height: 100%;
+  background: url("../Assets/login_banner.jpg") no-repeat center;
+  background-size: cover;
+}
+
+.loginScreen__logo {
+  position: fixed;
+  left: 0;
+  width: 100px;
+  object-fit: contain;
+  padding-left: 20px;
+}
+.loginScreen__gradient {
+  width: 100%;
+  z-index: 1;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.4);
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.8) 10%,
+    rgba(0, 0, 0, 0.3) 60%,
+    rgba(0, 0, 0, 0.8) 100%
+  );
+}
+
+.loginScreen__button {
+  position: fixed;
+  right: 20px;
+  top: 20px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: white;
+  background-color: red;
+  border: none;
+  font-weight: 600;
+  font-family: "Questrial", sans-serif;
+  cursor: pointer;
+}
+
+.loginScreen__body {
+  position: absolute;
+  z-index: 1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    text-align: center;
+    color: white;
+    padding-bottom: 20px;
+}
+
+.loginScreen__body > h1 {
+  font-size: 3.125rem;
+  margin-bottom: 20px;
+}
+.loginScreen__body > h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  font-weight: 400;
+}
+.loginScreen__body > h3 {
+  font-size: 1.3rem;
+  font-weight: 400;
+}
+
+.loginScreen__input > form > input {
+  padding: 10px;
+  outline-width: 0;
+  height: 30px;
+  width: 30%;
+  border: none;
+  max-width: 600px;
+  font-family: "Questrial", sans-serif;
+}
+
+.loginScreen__input{
+    margin-top: 20px;
+}
+
+.loginScreen__getStarted {
+  color: white;
+  background-color: red;
+  border: none;
+  font-weight: 600;
+  font-family: "Questrial", sans-serif;
+  cursor: pointer;
+  height: 50px;
+  padding: 10px;
+}
